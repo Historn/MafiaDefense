@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4268218096744360992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4268218096744360994}
+  - component: {fileID: 4268218096744360995}
+  - component: {fileID: 4268218096744361005}
+  - component: {fileID: 4268218096744361004}
+  - component: {fileID: 4268218096744361007}
+  m_Layer: 0
+  m_Name: Management
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4268218096744360994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4268218096744360992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.96408, y: -52.36573, z: 48.90557}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4268218096744360995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4268218096744360992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f323b7ee69ef6745b8dd9c22360be9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - enemy: {fileID: 7752625299902912738, guid: 42816a020887ad241a3e790b045b561d, type: 3}
+    count: 5
+    rate: 2
+  - enemy: {fileID: 7752625299902912738, guid: 42816a020887ad241a3e790b045b561d, type: 3}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 7752625299902912738, guid: 9f38e906ffa827b45918616cfee68c58, type: 3}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 7752625299902912738, guid: 8e064226f8cb82549839c410ec46888c, type: 3}
+    count: 2
+    rate: 2
+  spawnPoint: {fileID: 0}
+  timeBetweenWaves: 5
+  waveCountdownText: {fileID: 0}
+  gameManager: {fileID: 4268218096744361004}
+--- !u!114 &4268218096744361005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4268218096744360992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca49f5ed932fe9e4c9ad44a62dbf71c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 900
+  startLives: 5
+--- !u!114 &4268218096744361004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4268218096744360992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfab5d4b8ec83a24e8d2f52c8c9014f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuCanvas: {fileID: 0}
+  optionsMenuCanvas: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  optionsPauseCanvas: {fileID: 0}
+  master: {fileID: 24100000, guid: 7372af84b8bb0f648abcf9d3d132048b, type: 2}
+  cambioRes: {fileID: 0}
+  gameOverUI: {fileID: 0}
+  levelToLoad: MainLevel
+  WinLevelUI: {fileID: 0}
+  sceneFader: {fileID: 9200391429690425861, guid: fe80d99309ceb774097c36f5b74586f2,
+    type: 3}
+--- !u!114 &4268218096744361007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4268218096744360992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4b8713266756c4c806547a4d488e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sniperPrefab: {fileID: 1486252342477307447, guid: de25da8953e8d0d4f919225ff1a35445,
+    type: 3}
+  speakerPrefab: {fileID: 7306581307628466669, guid: a2b30ff8bbb0bae49b5bc46b03d8db61,
+    type: 3}
+  teslaPrefab: {fileID: -927199367670048503, guid: ec01b2fdb16fea246b492ace2bbf54db,
+    type: 3}
+  upgradedSniper: {fileID: 621210629920105826, guid: e06d6029ceb95d5489261250874037c8,
+    type: 3}
+  upgradedSpeaker: {fileID: 7306581307628466669, guid: e622848afc1fd934e8be462b4b41a80e,
+    type: 3}
+  upgradedTesla: {fileID: 1512189297732082835, guid: a3afef488f271ed4a8a0c41334c2c44a,
+    type: 3}
+  buildEffect: {fileID: 8612843371198270751, guid: 644e3579919e5ce44978205540640b77,
+    type: 3}
+  sellEffect: {fileID: 1006032354564096787, guid: 2f5090f5c6ef369439f3788350e20b70,
+    type: 3}
+  nodeUI: {fileID: 0}
